@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Login</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional Test</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Verify that the user is able to login by entering valid credentials and clicking on the &quot;Login&quot; button.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User Account Exist </preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The users should be able to Navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Enter a Valid Username and password</content><expected>The users should be able to enter valid username and password</expected></step>
+<step>
+<index>3</index><content>Click on the &quot;login&quot; button</content><expected>The users should be able to log in successfuly</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>Verify that the user is not able to login with an invalid email and password</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User does account not exist </preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Enter an invalid email and password</content><expected>The user should be able to enter an invalid email and password</expected></step>
+<step>
+<index>3</index><content>Click on the &quot;login&quot; button</content><expected>The user should not be able to log in and should be prompted with an error message</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Verify that the user can reset password through &quot;forgoten password&quot;</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user account does exist</preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Click on the &quot;forgotten password&quot; button</content><expected>The user should be redirected to forgot your password page</expected></step>
+<step>
+<index>3</index><content>enter a valid email address and click the &quot;Continue&quot; button</content><expected>A prompt would notify the user of a reset password email sent to their e-mail address.
+
+The user should receive an email and be able to reset their password.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Verify that the error message gets displayed in case the user leaves the username or password field blank.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>A user account exists</preconds>
+										<steps_separated><step>
+<index>1</index><content>1. Navigate to the login page</content><expected>Able to navigate login page</expected></step>
+<step>
+<index>2</index><content>Leave email and password fields empty</content><expected>email and password fields are empty</expected></step>
+<step>
+<index>3</index><content>Click on the &quot;Login&quot; button</content><expected>The user should not be able to log in and should be prompted with an error message</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Verify that the user is able to login by entering valid credentials and pressing enter key on the keyboard</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User account exist</preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The users should be able to Navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Enter a Valid Username and password</content><expected>The users should be able to enter valid username and password</expected></step>
+<step>
+<index>3</index><content>press the enter key on the keyboard</content><expected>The user should be able to login successfuly</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Security Test</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C10</id>
+				<title>Verify that the password entered is masked</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user account exists</preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Enter a valid email and password and then verify that the password is masked</content><expected>The user should be able to enter a valid email and masked password</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Verify that the user cannot perform paste in the password field</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user account exists</preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Enter a Valid Email and paste the password on the password field</content><expected>The user should be able to enter a valid email address
+The user should not be able to paste into the password field</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>Verify that there is a limit on the total number of unsuccessful login attempts.</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds> The user account exists</preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Enter a valid email</content><expected>The user should be able to enter a valid email</expected></step>
+<step>
+<index>3</index><content>Enter an invalid password for the same email 5 times with a different password each time</content><expected>After the fifth attempt, the user would be restricted for 10 mins before the user can try to login again.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Registration</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional Test</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C6</id>
+				<title>Verify Successful Registration</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user account does not exist</preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the registration page</content><expected>User should be able to navigate registration page</expected></step>
+<step>
+<index>2</index><content>Fill in the personal details and then enter a valid email and password</content><expected>User should be able to fill the personal details field along with the valis email and password</expected></step>
+<step>
+<index>3</index><content>Click on &quot;I have read and agree to the Privacy Policy&quot; and Click on the &quot;Continue&quot; button</content><expected>The user should be able to register and a welcome message will appear</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>Verify the user should not be able to register invalid email and password</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user account does not exist</preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the registration page</content><expected>User should be able to navigate registration page</expected></step>
+<step>
+<index>2</index><content>Fill in the personal details and then enter an invalid email and password</content><expected>The user should not be able to proceed and should be prompted with an error message</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>Verify that the validation message gets displayed in case the user did not agree with privacy policy</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user account does not exist</preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the registration page</content><expected>	
+The user should be able to navigate the registration page</expected></step>
+<step>
+<index>2</index><content>Fill in the personal details and then enter a valid email and password</content><expected>The user should not be able to fill the personal details and enter valid email and password</expected></step>
+<step>
+<index>3</index><content>Leave the &quot;I have read and agree to the Privacy Policy&quot; blank and Click on the &quot;Continue&quot; button</content><expected>The user should not be able to proceed and should be prompted with an error message to Agree with the privacy policy</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Verify that the validation message gets displayed in case the user leaves a required field blank</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user account does not exist</preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the registration page</content><expected>The user should be able to navigate to the registration page</expected></step>
+<step>
+<index>2</index><content>Fill all the required fields with valid information</content><expected>The user should be able to fill up all the required fields</expected></step>
+<step>
+<index>3</index><content>Click on the &quot;Continue&quot; button</content><expected>The user should not be able to continue and prompts a message to agree with the privacy policy</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>Verify that if a user tries to register an existing email then an error message should get displayed.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user account exists</preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the registration page</content><expected>The user should be able to navigate to the registration page</expected></step>
+<step>
+<index>2</index><content>Fill up all required fields</content><expected>The user should be able to fill up all the required field</expected></step>
+<step>
+<index>3</index><content>Enter an existing email</content><expected>The user should be prompted with an error message regarding an already existing email</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Security Test</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C15</id>
+				<title>Verify if the user can register less than the required numbers of characters</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is not registered </preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the registration page</content><expected>The user should be able to navigate to the registration page</expected></step>
+<step>
+<index>2</index><content>Fill in all the required field </content><expected>The user should be able to fill in all the required field</expected></step>
+<step>
+<index>3</index><content>enter on the password field a characters less than four then agree to the privacy policy and click continue</content><expected>The user would not be able to proceed and the password field would display a warning message</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>Verify that the password entered is masked upon registration</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>the user is not registered</preconds>
+										<steps_separated><step>
+<index>1</index><content>	
+Navigate to the registration page</content><expected>The user should be able to navigate to the registration page</expected></step>
+<step>
+<index>2</index><content>Fill in all the required fields including the password field</content><expected>The password entered should be masked</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Add to Cart</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional Test</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C17</id>
+				<title>Check whether the Shopping Cart button is seen on the product detail page.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user should be logged in</preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate the homepage and scroll down to featured products</content><expected>The user should be able to navigate and scroll down to featured products</expected></step>
+<step>
+<index>2</index><content>Select any products in the featured items</content><expected>the user should be redirected to the product details of the selected item.</expected></step>
+<step>
+<index>3</index><content>The &quot;Add to Cart&quot; button should be seen on the product detail page</content><expected>The &quot;Add to Cart&quot; button should be seen on the right side of the product</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C18</id>
+				<title>Check whether the quantity of the product increases when Adding one item to the cart.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user should be logged in</preconds>
+										<steps_separated><step>
+<index>1</index><content>Select any product item on the home page</content><expected>The user should be redirected to the product details of the selected item</expected></step>
+<step>
+<index>2</index><content>Click on the &quot;Add to Cart&quot; button</content><expected>A message would confirm the addition of the product to the shopping cart
+
+</expected></step>
+<step>
+<index>3</index><content>Click the &quot;Shopping Cart&quot; button on the top right side of the page and verify the quantity of the product increases.</content><expected>The user should see an increase of the quantity of product on the cart</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C19</id>
+				<title>Check whether the quantity is decreased when removing some items from the cart.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. The user should be logged in
+2. There should be at least 1 item in the cart
+ </preconds>
+										<steps_separated><step>
+<index>1</index><content>Click the &quot;Shopping Cart&quot; at the top right corner</content><expected>The user should be redirected to the shopping cart page</expected></step>
+<step>
+<index>2</index><content>Remove a product by clicking the &quot;x&quot; icon under quantity</content><expected>A message would pop up and the product should be removed from the list </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C20</id>
+				<title>Check whether the user can remove all items from the cart, the cart should be displayed as empty</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. The user should be logged in.
+2. There should be at least two items in the shopping cart.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click the &quot;Shopping Cart&quot; button on the top right corner of the page</content><expected>The user should be directed to the shopping cart page</expected></step>
+<step>
+<index>2</index><content>Remove all items by clicking on the &quot;x&quot; button under quantity</content><expected>The page should display an empty </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>Check whether the total price is added when the product is added to the cart.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user should be logged in
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Add at least two items to the shopping cart</content><expected>The item should be reflected in the shopping cart</expected></step>
+<step>
+<index>2</index><content>Click the &quot;Shopping Cart&quot; button on the top right corner of the page</content><expected>The user should be directed to the shopping cart page</expected></step>
+<step>
+<index>3</index><content>Check whether the total price is added</content><expected>The total price of the items should be added</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Usability Test</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C23</id>
+				<title>Check whether the user can change the number of items from the cart or not.</title>
+												<template>Test Case (Steps)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. The user should be logged in.
+2. There should be at least 1 item in the shopping cart
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click the &quot;Shopping Cart&quot; button on the top right corner of the screen</content><expected>The user should be directed to the shopping cart page</expected></step>
+<step>
+<index>2</index><content>Change the number of items from the cart by typing the desired number of items under the &quot;quantity&quot; field and then click the update button.</content><expected>The number of items and the total price should be updated accordingly</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C24</id>
+				<title>Check whether the user can add any or all products to their wishlist.</title>
+												<template>Test Case (Steps)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user should be logged in</preconds>
+										<steps_separated><step>
+<index>1</index><content>From the homepage add any item to the wish list by clicking the heart symbol under the desired item</content><expected>A message would confirm the addition of an item to the wish list
+
+</expected></step>
+<step>
+<index>2</index><content>Check if the item is added to the wish list by clicking the &quot;Wish List&quot; button on the top right corner of the screen</content><expected>The desired product on the wish list should be displayed</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Checkout and Payment Gateway</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional Test</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C21</id>
+				<title>Verify that users can click the &quot;Checkout&quot; button from the homepage</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user should be logged in</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click the &quot;Checkout&quot; button on the top right of the screen</content><expected>The user is redirected to the checkout page</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C25</id>
+				<title>Check whether only registered users are allowed to access the Checkout Address Page.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user should not be logged in</preconds>
+										<steps_separated><step>
+<index>1</index><content>Navigate to the homepage</content><expected>The user should be able to navigate the homepage</expected></step>
+<step>
+<index>2</index><content>Click on the &quot;Checkout&quot; button on the top right corner of the page</content><expected>The user should not be able to proceed to the checkout page and be redirected to the login page</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C26</id>
+				<title>Check whether the right error message is displayed  when the user leaves the mandatory fields blank in all the mandatory fields on the checkout address page.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user must not be registered </preconds>
+										<steps_separated><step>
+<index>1</index><content>Access the homepage and click the &quot;Checkout&quot; button on the top right corner of the page</content><expected>The user should be directed to the checkout page</expected></step>
+<step>
+<index>2</index><content>Leave all the fields empty and click the &quot;Continue&quot; button</content><expected>The user would not be able to continue and all required empty fields would display exclamation marks with a red outline</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C27</id>
+				<title>Check the checkout page if the user can see all the product details like Name, Quantity, Amount, etc.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is logged in 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Select an item from the homepage and click the &quot;Add to Cart&quot; button</content><expected>The selected item should be added to the cart</expected></step>
+<step>
+<index>2</index><content>Click the &quot;Checkout&quot; button</content><expected>The user product details like Name, Quantity, and Amount are displayed</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C29</id>
+				<title>Verify if the user cannot click the &quot;Confirm Order&quot; button if the user leaves a blank field</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user should not be logged in
+There is at least 1 item in the cart
+ </preconds>
+										<steps_separated><step>
+<index>1</index><content>click the &quot;Checkout&quot; button from the top right corner of the page</content><expected>the user should be directed to the checkout page</expected></step>
+<step>
+<index>2</index><content>Click the &quot;Confirm Order&quot; button</content><expected>The user should not be able to proceed with the confirmation of the order</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C32</id>
+				<title>Check if each of the payment options is selectable.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. The user should be logged in
+2. The address information of the user is already set up
+3. There should be a product in the cart
+ </preconds>
+										<steps_separated><step>
+<index>1</index><content>Click on the &quot;Checkout&quot; button</content><expected>The use should be directed to the checkout page</expected></step>
+<step>
+<index>2</index><content>Click &quot;Choose&quot; under payment click each option</content><expected>Every option should be selectable</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+</suite>
