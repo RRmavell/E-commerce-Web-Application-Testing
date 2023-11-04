@@ -1,0 +1,1674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R1</id>
+	<name>Test Run 10/30/2023</name>
+	<description></description>
+	<config></config>
+	<createdon>2023-10-30T14:16:06Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>61</percent>
+			<count>17</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>39</percent>
+			<count>11</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Login</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional Test</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T1</id>
+				<title>Verify that the user is able to login by entering valid credentials and clicking on the &quot;Login&quot; button.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>User Account Exist </preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The users should be able to Navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Enter a Valid Username and password</content><expected>The users should be able to enter valid username and password</expected></step>
+<step>
+<index>3</index><content>Click on the &quot;login&quot; button</content><expected>The users should be able to log in successfuly</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C1</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																										<elapsed>28</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-30T14:19:34Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>28</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the login page</content><expected>The users should be able to Navigate to the login page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Enter a Valid Username and password</content><expected>The users should be able to enter valid username and password</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Click on the </content><expected>The users should be able to log in successfuly</expected><actual>As expected</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T2</id>
+				<title>Verify that the user is not able to login with an invalid email and password</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>User does account not exist </preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Enter an invalid email and password</content><expected>The user should be able to enter an invalid email and password</expected></step>
+<step>
+<index>3</index><content>Click on the &quot;login&quot; button</content><expected>The user should not be able to log in and should be prompted with an error message</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																										<elapsed>12</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-30T14:22:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>12</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected><actual>Same as expected result</actual><status>Passed</status></step>
+<step>
+<content>Enter an invalid email and password</content><expected>The user should be able to enter an invalid email and password</expected><actual>Same as expected result</actual><status>Passed</status></step>
+<step>
+<content>Click on the </content><expected>The user should not be able to log in and should be prompted with an error message</expected><actual>Same as expected result</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T3</id>
+				<title>Verify that the user can reset password through &quot;forgoten password&quot;</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user account does exist</preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Click on the &quot;forgotten password&quot; button</content><expected>The user should be redirected to forgot your password page</expected></step>
+<step>
+<index>3</index><content>enter a valid email address and click the &quot;Continue&quot; button</content><expected>A prompt would notify the user of a reset password email sent to their e-mail address.
+
+The user should receive an email and be able to reset their password.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																										<elapsed>14</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-30T14:26:58Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>14</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected><actual>As Expected</actual><status>Passed</status></step>
+<step>
+<content>Click on the </content><expected>The user should be redirected to forgot your password page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>enter a valid email address and click the </content><expected>A prompt would notify the user of a reset password email sent to their e-mail address.
+
+The user should receive an email and be able to reset their password.</expected><actual>After clicking the continue button the a confirmation that the password is updated
+ ![](index.php?/attachments/get/72247e43-77c8-4723-a3a8-1e9bf129f1a6)</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T4</id>
+				<title>Verify that the error message gets displayed in case the user leaves the username or password field blank.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>A user account exists</preconds>
+															<steps_separated><step>
+<index>1</index><content>1. Navigate to the login page</content><expected>Able to navigate login page</expected></step>
+<step>
+<index>2</index><content>Leave email and password fields empty</content><expected>email and password fields are empty</expected></step>
+<step>
+<index>3</index><content>Click on the &quot;Login&quot; button</content><expected>The user should not be able to log in and should be prompted with an error message &quot;Please enter Email and Password&quot;.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																										<elapsed>15</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-30T14:31:00Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>15</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>1. Navigate to the login page</content><expected>Able to navigate login page</expected><actual>Same as expected</actual><status>Passed</status></step>
+<step>
+<content>Leave email and password fields empty</content><expected>email and password fields are empty</expected><actual>Same as expected</actual><status>Passed</status></step>
+<step>
+<content>Click on the </content><expected>The user should not be able to log in and should be prompted with an error message </expected><actual>The error message is incorrect.
+ ![](index.php?/attachments/get/3326deed-5928-4ad1-bf17-2eb13b3aab7b)</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T5</id>
+				<title>Verify that the user is able to login by entering valid credentials and pressing enter key on the keyboard</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>User account exist</preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The users should be able to Navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Enter a Valid Username and password</content><expected>The users should be able to enter valid username and password</expected></step>
+<step>
+<index>3</index><content>press the enter key on the keyboard</content><expected>The user should be able to login successfuly</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C5</caseid>
+																<status>Passed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>11</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-30T14:37:28Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed>11</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the login page</content><expected>The users should be able to Navigate to the login page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Enter a Valid Username and password</content><expected>The users should be able to enter valid username and password</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>press the enter key on the keyboard</content><expected>The user should be able to login successfuly</expected><actual>As expected</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Security Test</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T6</id>
+				<title>Verify that the password entered is masked</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>High</priority>
+																<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user account exists</preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Enter a valid email and password and then verify that the password is masked</content><expected>The user should be able to enter a valid email and masked password</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C6</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																										<elapsed>14</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-30T14:38:44Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>14</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Enter a valid email and password and then verify that the password is masked</content><expected>The user should be able to enter a valid email and masked password</expected><actual>The password is masked</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T7</id>
+				<title>Verify that the user cannot perform paste in the password field</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user account exists</preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Enter a Valid Email and paste the password on the password field</content><expected>The user should be able to enter a valid email address
+The user should not be able to paste into the password field</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C7</caseid>
+																<status>Failed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>18</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-30T14:43:36Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Failed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed>18</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Enter a Valid Email and paste the password on the password field</content><expected>The user should be able to enter a valid email address
+The user should not be able to paste into the password field</expected><actual>The user is able to paste password</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T8</id>
+				<title>Verify that there is a limit on the total number of unsuccessful login attempts.</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds> The user account exists</preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected></step>
+<step>
+<index>2</index><content>Enter a valid email</content><expected>The user should be able to enter a valid email</expected></step>
+<step>
+<index>3</index><content>Enter an invalid password for the same email 5 times with a different password each time</content><expected>After the fifth attempt, the user would be restricted for 10 mins before the user can try to login again.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C8</caseid>
+																<status>Failed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>48</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-30T14:46:22Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Failed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed>48</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the login page</content><expected>The user should be able to navigate to the login page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Enter a valid email</content><expected>The user should be able to enter a valid email</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Enter an invalid password for the same email 5 times with a different password each time</content><expected>After the fifth attempt, the user would be restricted for 10 mins before the user can try to login again.</expected><actual>The user is able to attempt log in even after 5 tries with the same e-mail</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+		<section>
+		<name>Registration</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional Test</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T9</id>
+				<title>Verify Successful Registration</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user account does not exist</preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the registration page</content><expected>User should be able to navigate registration page</expected></step>
+<step>
+<index>2</index><content>Fill in the personal details and then enter a valid email and password</content><expected>User should be able to fill the personal details field along with the valis email and password</expected></step>
+<step>
+<index>3</index><content>Click on &quot;I have read and agree to the Privacy Policy&quot; and Click on the &quot;Continue&quot; button</content><expected>The user should be able to register and a welcome message will appear</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C9</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																										<elapsed>49</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-31T06:17:40Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>49</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the registration page</content><expected>User should be able to navigate registration page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Fill in the personal details and then enter a valid email and password</content><expected>User should be able to fill the personal details field along with the valis email and password</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Click on </content><expected>The user should be able to register and a welcome message will appear</expected><actual>The user has verified of the newly created account but welcome message is not shown.
+ ![](index.php?/attachments/get/382a5526-157c-404b-82ed-d18164a01b23)</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T10</id>
+				<title>Verify the user should not be able to register invalid email and password</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user account does not exist</preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the registration page</content><expected>User should be able to navigate registration page</expected></step>
+<step>
+<index>2</index><content>Fill in the personal details and then enter an invalid email and password</content><expected>The user should not be able to proceed and should be prompted with an error message</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C10</caseid>
+																<status>Passed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>16</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-31T06:20:16Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed>16</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the registration page</content><expected>User should be able to navigate registration page</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Fill in the personal details and then enter an invalid email and password</content><expected>The user should not be able to proceed and should be prompted with an error message</expected><actual></actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T11</id>
+				<title>Verify that the validation message gets displayed in case the user did not agree with privacy policy</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user account does not exist</preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the registration page</content><expected>	
+The user should be able to navigate the registration page</expected></step>
+<step>
+<index>2</index><content>Fill in the personal details and then enter a valid email and password</content><expected>The user should not be able to fill the personal details and enter valid email and password</expected></step>
+<step>
+<index>3</index><content>Leave the &quot;I have read and agree to the Privacy Policy&quot; blank and Click on the &quot;Continue&quot; button</content><expected>The user should not be able to proceed and should be prompted with an error message to Agree with the privacy policy</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C11</caseid>
+																<status>Passed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>38</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-31T06:24:01Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed>38</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the registration page</content><expected>	
+The user should be able to navigate the registration page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Fill in the personal details and then enter a valid email and password</content><expected>The user should not be able to fill the personal details and enter valid email and password</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Leave the </content><expected>The user should not be able to proceed and should be prompted with an error message to Agree with the privacy policy</expected><actual>The user cannot continue and a message prompt appeared to notify the user that the user should agree to the privacy policy</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T12</id>
+				<title>Verify that the validation message gets displayed in case the user leaves a required field blank</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user account does not exist</preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the registration page</content><expected>The user should be able to navigate to the registration page</expected></step>
+<step>
+<index>2</index><content>Leaves all the fields blank</content><expected>All fields must be blank</expected></step>
+<step>
+<index>3</index><content>Click on the &quot;Continue&quot; button</content><expected>The user should not be able to continue and be required to fill all the required fields</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C12</caseid>
+																<status>Passed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>31</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-31T06:30:49Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed>31</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the registration page</content><expected>The user should be able to navigate to the registration page</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Leaves all the fields blank</content><expected>All fields must be blank</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on the </content><expected>The user should not be able to continue and be required to fill all the required fields</expected><actual>The user cannot continue and the blank fields turn red.</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T13</id>
+				<title>Verify that if a user tries to register an existing email then an error message should get displayed.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user account exists</preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the registration page</content><expected>The user should be able to navigate to the registration page</expected></step>
+<step>
+<index>2</index><content>Fill up all required fields</content><expected>The user should be able to fill up all the required field</expected></step>
+<step>
+<index>3</index><content>Enter an existing email</content><expected>The user should be prompted with an error message regarding an already existing email</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C13</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																										<elapsed>27</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-31T06:35:02Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>27</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the registration page</content><expected>The user should be able to navigate to the registration page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Fill up all required fields</content><expected>The user should be able to fill up all the required field</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Enter an existing email</content><expected>The user should be prompted with an error message regarding an already existing email</expected><actual>There are no prompt about an existing email.
+ ![](index.php?/attachments/get/70234db2-a070-41f7-8da1-d5ef149a546f)</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Security Test</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T14</id>
+				<title>Verify if the user can register less than the required numbers of characters</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>User is not registered </preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the registration page</content><expected>The user should be able to navigate to the registration page</expected></step>
+<step>
+<index>2</index><content>Fill in all the required field </content><expected>The user should be able to fill in all the required field</expected></step>
+<step>
+<index>3</index><content>enter on the password field a characters less than four then agree to the privacy policy and click continue</content><expected>The user would not be able to proceed and the password field would display a warning message</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C14</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-10-31T06:37:59Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the registration page</content><expected>The user should be able to navigate to the registration page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Fill in all the required field </content><expected>The user should be able to fill in all the required field</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>enter on the password field a characters less than four then agree to the privacy policy and click continue</content><expected>The user would not be able to proceed and the password field would display a warning message</expected><actual>The password field turn red and pops a message &quot;Password must be between 4 and 20 characters!&quot;</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T15</id>
+				<title>Verify that the password entered is masked upon registration</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>the user is not registered</preconds>
+															<steps_separated><step>
+<index>1</index><content>	
+Navigate to the registration page</content><expected>The user should be able to navigate to the registration page</expected></step>
+<step>
+<index>2</index><content>Fill in all the required fields including the password field</content><expected>The password entered should be masked</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C15</caseid>
+																<status>Passed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>16</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-31T07:07:23Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed>16</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>	
+Navigate to the registration page</content><expected>The user should be able to navigate to the registration page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Fill in all the required fields including the password field</content><expected>The password entered should be masked</expected><actual>The password is masked</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+		<section>
+		<name>Add to Cart</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional Test</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T16</id>
+				<title>Check whether the Shopping Cart button is seen on the product detail page.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user should be logged in</preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate the homepage and scroll down to featured products</content><expected>The user should be able to navigate and scroll down to featured products</expected></step>
+<step>
+<index>2</index><content>Select any products in the featured items</content><expected>the user should be redirected to the product details of the selected item.</expected></step>
+<step>
+<index>3</index><content>The &quot;Add to Cart&quot; button should be seen on the product detail page</content><expected>The &quot;Add to Cart&quot; button should be seen on the right side of the product</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C16</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-10-31T07:14:28Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate the homepage and scroll down to featured products</content><expected>The user should be able to navigate and scroll down to featured products</expected><actual>as expected</actual><status>Passed</status></step>
+<step>
+<content>Select any products in the featured items</content><expected>the user should be redirected to the product details of the selected item.</expected><actual>as expected</actual><status>Passed</status></step>
+<step>
+<content>The </content><expected>The </expected><actual>The &quot;Add to cart&quot; button is present in the product detail page.
+ ![](index.php?/attachments/get/a01e3bf0-d02d-48ab-abb3-af4d2b2ec4ac)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T17</id>
+				<title>Check whether the quantity of the product increases when Adding one item to the cart.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user should be logged in</preconds>
+															<steps_separated><step>
+<index>1</index><content>Select any product item on the home page</content><expected>The user should be redirected to the product details of the selected item</expected></step>
+<step>
+<index>2</index><content>Click on the &quot;Add to Cart&quot; button</content><expected>A message would confirm the addition of the product to the shopping cart
+
+</expected></step>
+<step>
+<index>3</index><content>Click the &quot;Shopping Cart&quot; button on the top right side of the page and verify the quantity of the product increases.</content><expected>The user should see an increase of the quantity of product on the cart</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C17</caseid>
+																<status>Passed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>30</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-31T07:17:05Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed>30</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Select any product item on the home page</content><expected>The user should be redirected to the product details of the selected item</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Click on the </content><expected>A message would confirm the addition of the product to the shopping cart
+
+</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Click the </content><expected>The user should see an increase of the quantity of product on the cart</expected><actual>There is an additional quantity of product on the cart.
+ ![](index.php?/attachments/get/43e7c3e5-7613-473b-9146-803007ab5c48)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T18</id>
+				<title>Check whether the quantity is decreased when removing some items from the cart.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>1. The user should be logged in
+2. There should be at least 1 item in the cart
+ </preconds>
+															<steps_separated><step>
+<index>1</index><content>Click the &quot;Shopping Cart&quot; at the top right corner</content><expected>The user should be redirected to the shopping cart page</expected></step>
+<step>
+<index>2</index><content>Remove a product by clicking the &quot;x&quot; icon under quantity</content><expected>A message would pop up and the product should be removed from the list </expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C18</caseid>
+																<status>Failed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-10-31T07:22:05Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Failed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Click the </content><expected>The user should be redirected to the shopping cart page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Remove a product by clicking the </content><expected>A message would pop up and the product should be removed from the list </expected><actual>The quantity decreased but there are no message confirmation</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T19</id>
+				<title>Check whether the user can remove all items from the cart, the cart should be displayed as empty</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>1. The user should be logged in.
+2. There should be at least two items in the shopping cart.</preconds>
+															<steps_separated><step>
+<index>1</index><content>Click the &quot;Shopping Cart&quot; button on the top right corner of the page</content><expected>The user should be directed to the shopping cart page</expected></step>
+<step>
+<index>2</index><content>Remove all items by clicking on the &quot;x&quot; button under quantity</content><expected>The page should display an empty </expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C19</caseid>
+																<status>Passed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>31</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-31T07:35:35Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed>31</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Click the </content><expected>The user should be directed to the shopping cart page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Remove all items by clicking on the </content><expected>The page should display an empty </expected><actual>The page displayed empty shopping cart.
+ ![](index.php?/attachments/get/acaf93e7-a5d8-4ba3-b99e-f9522d13d80b)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:06Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T20</id>
+				<title>Check whether the total price is added when the product is added to the cart.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user should be logged in
+</preconds>
+															<steps_separated><step>
+<index>1</index><content>Add at least two items to the shopping cart</content><expected>The item should be reflected in the shopping cart</expected></step>
+<step>
+<index>2</index><content>Click the &quot;Shopping Cart&quot; button on the top right corner of the page</content><expected>The user should be directed to the shopping cart page</expected></step>
+<step>
+<index>3</index><content>Check whether the total price is added</content><expected>The total price of the items should be added</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C20</caseid>
+																<status>Passed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>55</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-31T07:41:25Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed>55</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Add at least two items to the shopping cart</content><expected>The item should be reflected in the shopping cart</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Click the </content><expected>The user should be directed to the shopping cart page</expected><actual>As expected</actual><status>Passed</status></step>
+<step>
+<content>Check whether the total price is added</content><expected>The total price of the items should be added</expected><actual>The total price is added correctly</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:07Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Usability Test</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T21</id>
+				<title>Check whether the user can change the number of items from the cart or not.</title>
+												<template>Test Case (Steps)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>1. The user should be logged in.
+2. There should be at least 1 item in the shopping cart
+
+</preconds>
+															<steps_separated><step>
+<index>1</index><content>Click the &quot;Shopping Cart&quot; button on the top right corner of the screen</content><expected>The user should be directed to the shopping cart page</expected></step>
+<step>
+<index>2</index><content>Change the number of items from the cart by typing the desired number of items under the &quot;quantity&quot; field and then click the update button.</content><expected>The number of items and the total price should be updated accordingly</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C21</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																										<elapsed>23</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-10-31T07:46:54Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>23</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Click the </content><expected>The user should be directed to the shopping cart page</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Change the number of items from the cart by typing the desired number of items under the </content><expected>The number of items and the total price should be updated accordingly</expected><actual>The number of items can be changed accordingly</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:07Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T22</id>
+				<title>Check whether the user can add products to their wishlist.</title>
+												<template>Test Case (Steps)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user should be logged in</preconds>
+															<steps_separated><step>
+<index>1</index><content>From the homepage add any item to the wish list by clicking the heart symbol under the desired item</content><expected>A message would confirm the addition of an item to the wish list
+
+</expected></step>
+<step>
+<index>2</index><content>Check if the item is added to the wish list by clicking the &quot;Wish List&quot; button on the top right corner of the screen</content><expected>The desired product on the wish list should be displayed</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C22</caseid>
+																<status>Failed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-10-31T07:55:24Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Failed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>From the homepage add any item to the wish list by clicking the heart symbol under the desired item</content><expected>A message would confirm the addition of an item to the wish list
+
+</expected><actual>As expected</actual><status>Failed</status></step>
+<step>
+<content>Check if the item is added to the wish list by clicking the </content><expected>The desired product on the wish list should be displayed</expected><actual>The user was able to add any product to the wish list.
+But the quantity of the wish list does not update immediately at the top right corner of the screen.
+It would only update if the page was refreshed</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:07Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+		<section>
+		<name>Checkout and Payment Gateway</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional Test</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T23</id>
+				<title>Verify that users can click the &quot;Checkout&quot; button from the homepage</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user should be logged in</preconds>
+															<steps_separated><step>
+<index>1</index><content>Click the &quot;Checkout&quot; button on the top right of the screen</content><expected>The user is redirected to the checkout page</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C23</caseid>
+																<status>Passed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>12</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-11-04T03:42:30Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed>12</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Click the </content><expected>The user is redirected to the checkout page</expected><actual>The user is redirected to the checkout page</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:07Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T24</id>
+				<title>Check whether only registered users are allowed to access the Checkout Address Page.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user should not be logged in</preconds>
+															<steps_separated><step>
+<index>1</index><content>Navigate to the homepage</content><expected>The user should be able to navigate the homepage</expected></step>
+<step>
+<index>2</index><content>Click on the &quot;Checkout&quot; button on the top right corner of the page</content><expected>The user should not be able to proceed to the checkout page and be redirected to the login page</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C24</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																										<elapsed>30</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-11-04T03:44:01Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>30</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Navigate to the homepage</content><expected>The user should be able to navigate the homepage</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on the </content><expected>The user should not be able to proceed to the checkout page and be redirected to the login page</expected><actual>The user is directed to the checkout page</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:07Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T25</id>
+				<title>Check whether the right error message is displayed  when the user leaves the mandatory fields blank in all the mandatory fields on the checkout address page.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user must not be registered </preconds>
+															<steps_separated><step>
+<index>1</index><content>Access the homepage and click the &quot;Checkout&quot; button on the top right corner of the page</content><expected>The user should be directed to the checkout page</expected></step>
+<step>
+<index>2</index><content>Leave all the fields empty and click the &quot;Continue&quot; button</content><expected>The user would not be able to continue and all required empty fields would display exclamation marks with a red outline</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C25</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																										<elapsed>37</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-11-04T04:10:48Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>37</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Access the homepage and click the </content><expected>The user should be directed to the checkout page</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Leave all the fields empty and click the </content><expected>The user would not be able to continue and all required empty fields would display exclamation marks with a red outline</expected><actual>no fields appeared.
+ ![](index.php?/attachments/get/3ad847ce-4a96-4f7f-9a2f-e6bd91190f34)</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:07Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T26</id>
+				<title>Check the checkout page if the user can see all the product details like Name, Quantity, Amount, etc.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user is logged in 
+</preconds>
+															<steps_separated><step>
+<index>1</index><content>Select an item from the homepage and click the &quot;Add to Cart&quot; button</content><expected>The selected item should be added to the cart</expected></step>
+<step>
+<index>2</index><content>Click the &quot;Checkout&quot; button</content><expected>The user product details like Name, Quantity, and Amount are displayed</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C26</caseid>
+																<status>Passed</status>
+																<assignedto>Renzo Roy M. Avellanida</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>59</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-11-04T04:03:55Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+																								<assignedto>Renzo Roy M. Avellanida</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed>59</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Select an item from the homepage and click the </content><expected>The selected item should be added to the cart</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click the </content><expected>The user product details like Name, Quantity, and Amount are displayed</expected><actual>The product details like Name, Quantity, and Amount are displayed</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:07Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T27</id>
+				<title>Verify if the user cannot click the &quot;Confirm Order&quot; button if the user leaves a blank field</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>The user should not be logged in
+There is at least 1 item in the cart
+ </preconds>
+															<steps_separated><step>
+<index>1</index><content>click the &quot;Checkout&quot; button from the top right corner of the page</content><expected>the user should be directed to the checkout page</expected></step>
+<step>
+<index>2</index><content>Click the &quot;Confirm Order&quot; button</content><expected>The user should not be able to proceed with the confirmation of the order</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C27</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																										<elapsed>12</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-11-04T04:05:48Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>12</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>click the </content><expected>the user should be directed to the checkout page</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click the </content><expected>The user should not be able to proceed with the confirmation of the order</expected><actual>The confirm order button is unclickable.</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:07Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T28</id>
+				<title>Check if each of the payment options is selectable.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>1. The user should be logged in
+2. The address information of the user is already set up
+3. There should be a product in the cart
+ </preconds>
+															<steps_separated><step>
+<index>1</index><content>Click on the &quot;Checkout&quot; button</content><expected>The use should be directed to the checkout page</expected></step>
+<step>
+<index>2</index><content>Click &quot;Choose&quot; under payment click each option</content><expected>Every option should be selectable</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C28</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																										<elapsed>32</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-11-04T04:07:29Z</createdon>
+																		<createdby>Renzo Roy M. Avellanida</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>32</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Click on the </content><expected>The use should be directed to the checkout page</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click </content><expected>Every option should be selectable</expected><actual>No payment option available.
+
+ ![](index.php?/attachments/get/1423d642-5391-4ef7-bc16-c6c7fe6ced2c)</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-10-30T14:16:07Z</createdon>
+																		<createdby>Curina Barbo</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+</sections>
+</run>
