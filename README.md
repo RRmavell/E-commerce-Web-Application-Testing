@@ -1,15 +1,14 @@
-# Software QA Testing Project.
+# E-commerce Web application Testing (Open Cart).
 # Overview.
-Welcome to the repository for my personal project on OpenCart, an open-source e-commerce platform.
+Welcome to the e-commerce web application testing repository for Open Cart, an open-source e-commerce platform.
 
 # Project Description.
-OpenCart
-OpenCart is a robust open-source e-commerce website platform designed to facilitate the construction of online stores and the seamless selling of products.
+In this project, I have conducted functional testing and UI testing for an e-commerce web application and I have set up a local server using Xampp as a test environment. The primary objective is to test the overall functionality and User interface of the web application.
 
 # Project Responsibilities.
 During the development of this project, my role primarily involved:
 
-Functional Testing and UI Testing: Ensuring the functionality and user interface of OpenCart met the required standards.
+Functional Testing and UI Testing: Ensuring the functionality and user interface of OpenCart.
 
 Test Case Execution: Rigorous execution of test cases to identify and validate various aspects of the platform.
 
