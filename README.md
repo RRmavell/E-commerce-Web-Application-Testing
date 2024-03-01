@@ -1,4 +1,4 @@
-# E-commerce Web application Testing (Open Cart).
+# E-commerce Web Application Testing (Open Cart).
 # Overview.
 Welcome to the e-commerce web application testing repository for Open Cart, an open-source e-commerce platform.
 
